@@ -1,0 +1,35 @@
+
+
+0x0800 : 26 08             MVI H,08H
+
+0x0802 : 2E 50             MVI L,50H
+
+0x0804 : 36 AB             MVI M,ABH
+
+0x0806 : 2C                INR L
+
+0x0807 : 36 93             MVI M,93H
+
+
+0x0809 : 21 50 08          LXI H,0850H
+
+0x080C : 7E                MOV A,M
+
+0x080D : 2C                INR L
+
+0x080E : 46                MOV B,M
+
+0x080F : 80                ADD B
+
+0x0810 : 32 52 08          STA 0852H
+
+
+0x0813 : D2 1A 08          JNC DHA
+
+0x0816 : 2C                INR L
+
+0x0817 : 2C                INR L
+
+0x0818 : 36 01             MVI M,1
+
+0x081A : 76                DHA: HLT
