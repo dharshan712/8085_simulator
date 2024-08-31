@@ -856,7 +856,7 @@ void execute()
             }
        }
         program_counter++;
-
+        opcode = memory[program_counter];
         if(step_by_step)
         {
             printf("\nNeed to visualize Output? ");
